@@ -19,9 +19,9 @@
         }
         p {
             text-align: justify;
-            margin: 10px 0px; 
+            margin: 10px 20px; 
             line-height: 1.6;
-            font-size: 16px; 
+            font-size: 16px;
         }
         .image-frame {
             display: flex;
@@ -32,6 +32,7 @@
             box-shadow: 0 0 15px rgba(139, 69, 19, 0.6); /* shadow effect */
             animation: glowing-border 1.5s infinite; /* glowing effect */
             max-width: 25%;
+            flex-direction: column; /* to stack image and caption */
         }
 
         img {
@@ -59,6 +60,13 @@
             width: calc(100% - 0px); 
             box-sizing: border-box; 
         }
+
+        .caption {
+            font-size: 12px; /* smaller font size for caption */
+            color: #555; /* lighter color for caption */
+            text-align: center; /* center align the caption */
+            margin-top: 5px; /* space between image and caption */
+        }
     </style>
 </head>
 <body>
@@ -83,9 +91,10 @@
     <h1>Tourist Places: Balai Pemuda Surabaya</h1>
     <div class="image-frame">
         <img src="balai pemuda.png" alt="Balai Pemuda Surabaya">
+		<small class="caption">Source: Internet</small> 
     </div>
     <div class="description">
-    <p>Welcome to <strong>Balai Pemuda</strong>, a cultural gem nestled in the heart of Surabaya! This historical complex is not just a treat for the eyes; it’s a vibrant hub of activity where you can immerse yourself in the rich heritage of East Java. Once built during the Dutch colonial era, Balai Pemuda is now a protected cultural site, ensuring that its charm and significance endure for generations to come. As you stroll 🚶 through this bustling complex, you’ll encounter fascinating sites like the underground museum 🏛️, the Balai Budaya building, and a public library—perfect for a quiet read! And if you're looking for a break, grab a delicious treat at the nearby food court, or enjoy a legendary Zangrandi ice cream 🍦 right across the street. It's the perfect way to cool down after a day of exploring!</p>
+        <p>Welcome to <strong>Balai Pemuda</strong>, a cultural gem nestled in the heart of Surabaya! This historical complex is not just a treat for the eyes; it’s a vibrant hub of activity where you can immerse yourself in the rich heritage of East Java. Once built during the Dutch colonial era, Balai Pemuda is now a protected cultural site, ensuring that its charm and significance endure for generations to come. As you stroll 🚶 through this bustling complex, you’ll encounter fascinating sites like the underground museum 🏛️, the Balai Budaya building, and a public library—perfect for a quiet read! And if you're looking for a break, grab a delicious treat at the nearby food court, or enjoy a legendary Zangrandi ice cream 🍦 right across the street. It's the perfect way to cool down after a day of exploring!</p>
     </div>
 
     <!-- fireworks -->
