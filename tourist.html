@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist Places</title>
+    <link rel="stylesheet" href="quiz1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Link Font Awesome -->
+    <style>
+        /* for a better look */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        p {
+            text-align: justify;
+            margin: 10px 0px; 
+            line-height: 1.6;
+            font-size: 16px; 
+        }
+        .image-frame {
+            display: flex;
+            justify-content: center;
+            margin: 20px auto;
+            border: 5px solid #8B4513; /* brown frame */
+            border-radius: 15px; 
+            box-shadow: 0 0 15px rgba(139, 69, 19, 0.6); /* shadow effect */
+            animation: glowing-border 1.5s infinite; /* glowing effect */
+            max-width: 25%;
+        }
+
+        img {
+            max-width: 100%; 
+            height: auto;
+            border-radius: 10px; 
+        }
+
+        @keyframes glowing-border {
+            0% {
+                box-shadow: 0 0 10px rgba(139, 69, 19, 0.6); 
+            }
+            50% {
+                box-shadow: 0 0 20px rgba(139, 69, 19, 1); 
+            }
+            100% {
+                box-shadow: 0 0 10px rgba(139, 69, 19, 0.6);
+            }
+        }
+
+        .description {
+            background-color: #fff; /* white background */
+            border-left: 10px solid #8B4513; /* left border only */
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* 3D effect */
+            width: calc(100% - 0px); 
+            box-sizing: border-box; 
+        }
+    </style>
+</head>
+<body>
+    <!-- slide effect -->
+    <marquee style="background-color: #f4f4f4; padding: 10px; font-size: 14px; color: #333;">
+        <i class="fas fa-music"></i> Surabaya - Sundari Soekotjo <i class="fas fa-music"></i>
+    </marquee>
+
+    <!-- autoplay -->
+    <iframe src="audio.html" style="display:none;" allow="autoplay"></iframe>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="hometown.html">Hometown</a></li>
+            <li><a href="food.html">Local Food</a></li>
+            <li><a href="tourist.html">Tourist Places</a></li>
+        </ul>
+    </nav>
+
+    <h1>Tourist Places: Balai Pemuda Surabaya</h1>
+    <div class="image-frame">
+        <img src="balai pemuda.png" alt="Balai Pemuda Surabaya">
+    </div>
+    <div class="description">
+    <p>Welcome to <strong>Balai Pemuda</strong>, a cultural gem nestled in the heart of Surabaya! This historical complex is not just a treat for the eyes; it’s a vibrant hub of activity where you can immerse yourself in the rich heritage of East Java. Once built during the Dutch colonial era, Balai Pemuda is now a protected cultural site, ensuring that its charm and significance endure for generations to come. As you stroll 🚶 through this bustling complex, you’ll encounter fascinating sites like the underground museum 🏛️, the Balai Budaya building, and a public library—perfect for a quiet read! And if you're looking for a break, grab a delicious treat at the nearby food court, or enjoy a legendary Zangrandi ice cream 🍦 right across the street. It's the perfect way to cool down after a day of exploring!</p>
+    </div>
+
+    <!-- fireworks -->
+    <div class="fireworks left"></div>
+    <div class="fireworks right"></div>
+
+    <script src="quiz1.js"></script>
+</body>
+</html>
